@@ -1,0 +1,22 @@
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5%;
+}
+.login{
+    text-align: center;
+    margin: 0 auto;
+    }
+.case{
+    border: 2px solid blue;
+        background-color: blue;
+        padding: 20px; /* Agrega un margen interno al div para que el contenido no quede muy pegado al borde */
+        color: white; /* Cambia el color de texto a blanco para que se vea mejor en el fondo azul */
+        margin-right: 38%;
+        margin-left: 38%;
+        border-radius: 150px;
+
+}
+p{
+    text-align: right;
+    margin-right: 20%;
+}
