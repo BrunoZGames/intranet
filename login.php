@@ -5,8 +5,8 @@ session_start();
 
 
 if (isset($_POST['submit'])) {
-    $usuario = $_POST['usuario'];
-    $pass = hash("sha256",$_POST['pass']);
+    $usuario = $con->real_escape_string($_POST['usuario']);
+    $pass = hash("sha256",$con->real_escape_string($_POST['pass']));
 
     // Consultar la base de datos para verificar las credenciales de usuario
     $sql = "SELECT * FROM users WHERE usuario = '$usuario' AND psw = '$pass'";
